@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Login - Controle da Máquina</title>
+
+
+<style>
+
+
+*{
+
+    box-sizing:border-box;
+
+}
+
+
+
+body{
+
+    margin:0;
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    background:
+
+    linear-gradient(
+
+        135deg,
+
+        #101820,
+
+        #0f172a
+
+    );
+
+
+
+    color:white;
+
+}
+
+
+
+
+.container{
+
+
+    width:420px;
+
+    max-width:90%;
+
+    background:#1e293b;
+
+    padding:40px;
+
+    border-radius:25px;
+
+    box-shadow:
+
+    0 20px 50px #0008;
+
+    
+
+    text-align:center;
+
+
+    animation:entrar .7s ease;
+
+}
+
+
+
+
+@keyframes entrar{
+
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+
+}
+
+
+
+
+
+.logo{
+
+
+    font-size:80px;
+
+    margin-bottom:10px;
+
+
+}
+
+
+
+
+h1{
+
+
+    margin:0;
+
+    font-size:32px;
+
+}
+
+
+
+p{
+
+
+    color:#94a3b8;
+
+    margin-bottom:30px;
+
+    font-size:17px;
+
+
+}
+
+
+
+
+input{
+
+
+    width:100%;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    border:none;
+
+    outline:none;
+
+
+    font-size:18px;
+
+
+    background:#0f172a;
+
+    color:white;
+
+
+    margin-bottom:20px;
+
+
+    border:2px solid transparent;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+
+input:focus{
+
+
+    border-color:#38bdf8;
+
+
+    box-shadow:
+
+    0 0 15px #38bdf877;
+
+
+}
+
+
+
+
+
+button{
+
+
+    width:100%;
+
+
+    padding:15px;
+
+
+    border:none;
+
+
+    border-radius:12px;
+
+
+    background:#22c55e;
+
+
+    color:white;
+
+
+    font-size:20px;
+
+
+    font-weight:bold;
+
+
+    cursor:pointer;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+
+
+button:hover{
+
+
+    transform:scale(1.03);
+
+
+    background:#16a34a;
+
+
+    box-shadow:
+
+    0 0 20px #22c55e88;
+
+
+}
+
+
+
+
+
+.info{
+
+
+    margin-top:25px;
+
+    font-size:14px;
+
+    color:#64748b;
+
+}
+
+
+
+
+.gear{
+
+
+    display:inline-block;
+
+    animation:girar 4s linear infinite;
+
+
+}
+
+
+
+
+@keyframes girar{
+
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+
+}
+
+
+
+
+</style>
+
+
+</head>
+
+
+
+
+
+<body>
+
+
+
+
+
+<div class="container">
+
+
+
+<div class="logo">
+
+<span class="gear">⚙️</span>
+
+</div>
+
+
+
+
+<h1>
+
+Controle da Máquina
+
+</h1>
+
+
+
+<p>
+
+Digite seu nome para iniciar o sistema
+
+</p>
+
+
+
+
+<form method="POST">
+
+
+<input
+
+type="text"
+
+name="nome"
+
+placeholder="Seu nome"
+
+required
+
+
+>
+
+
+
+<button>
+
+Entrar no sistema
+
+</button>
+
+
+</form>
+
+
+
+
+<div class="info">
+
+Reconhecimento por gestos 🤚
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+</body>
+
+
+</html>
